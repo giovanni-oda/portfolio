@@ -1,17 +1,10 @@
 <template>
-  <div>
-    <h2 class="text-2xl font-bold">Home</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione libero quidem placeat,
-      consequatur officia iure vel eaque. Voluptates hic neque sapiente facilis corrupti adipisci
-      maiores ex repudiandae, facere, dolores voluptas.
-    </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione libero quidem placeat,
-      consequatur officia iure vel eaque. Voluptates hic neque sapiente facilis corrupti adipisci
-      maiores ex repudiandae, facere, dolores voluptas.
-    </p>
-    <h1>Loading: {{ mainStore.loading }}</h1>
+  <div class="home-page">
+    <div class="hero">Home Hero</div>
+    <div class="footer">
+      © Copyright {{ new Date().getFullYear() }}. Made by Giovanni Oda <span>Ver. 1.0.0</span>
+    </div>
+    <!-- <h1>Loading: {{ mainStore.loading }}</h1> -->
   </div>
 </template>
 
