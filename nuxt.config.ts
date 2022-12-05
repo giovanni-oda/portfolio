@@ -4,8 +4,19 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Giovanni Oda's Portifolio",
-      meta: [{ name: 'description', content: "Giovanni Oda's Portifolio" }],
+      meta: [
+        {
+          name: 'description',
+          content:
+            "Giovanni Oda's Portifolio - I'm a full stack engineer focused web developer building web applications that leads to the success of the overall product."
+        }
+      ],
       link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/imgs/giovanni-oda-favicon.png'
+        },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/icon?family=Material+Icons'

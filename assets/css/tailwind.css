@@ -2,15 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-gray-50;
+  @apply theme-dark bg-background text-themeText;
+  font-family: 'Barlow', sans-serif;
+}
+
+.theme-light {
+  --primary: #539bf5;
+  --secondary: #e43f5a;
+  --tertiary: #273549;
+  --accent: #e2e8f0;
+  --surface: white;
+  --text: #2d333b;
+  --anchor: #568aff;
+  --background: #f8fafc;
+  --footer: #e5e7eb;
+}
+
+.theme-dark {
+  --primary: #539bf5;
+  --secondary: #e43f5a;
+  --tertiary: #273549;
+  --accent: #cbd5e1;
+  --surface: #2d333b;
+  --text: #adbac7;
+  --anchor: hsl(222, 100%, 67%);
+  --background: #22272e;
+  --footer: #1c2128;
 }
 
 @layer components {
   .btn {
-    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+    /* @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white uppercase; */
+    @apply bg-primary text-white px-6 py-3 rounded-md text-sm uppercase font-semibold;
   }
   .card {
     @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+  .chip {
+    @apply px-6 pb-2 pt-1 bg-accent text-lg rounded-md mr-3 mb-3 font-semibold;
   }
 }
