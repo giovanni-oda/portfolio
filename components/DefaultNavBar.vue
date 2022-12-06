@@ -1,4 +1,5 @@
 <template>
+  <!-- // NavBar -->
   <header
     class="sticky top-0 z-30 shadow-sm bg-surface"
     style="position: sticky !important">
@@ -11,7 +12,7 @@
           {{ showDrawer ? 'close' : 'menu' }}
         </span>
         <NuxtLink
-          to="/"
+          to="https://giovannioda.dev"
           class="font-semibold">
           <img
             class="w-10 h-10 rounded-full"
@@ -19,26 +20,21 @@
             alt="Giovanni Oda's avatar" />
         </NuxtLink>
         <NuxtLink
-          to="/"
+          to="https://giovannioda.dev"
           class="font-semibold">
-          <span class="ml-4 text-xl hover:text-primary duration-150">
+          <span class="ml-4 font-smibold text-3xl">GO</span>
+          <!-- <span class="ml-2 text-xl hover:text-primary duration-150">
             {{ '< ' }}Giovanni<span class="font-bold">Oda</span>{{ ' />' }}
-          </span>
+          </span> -->
         </NuxtLink>
       </div>
       <div class="flex items-center">
-        <ul class="hidden lg:flex gap-5 uppercase">
-          <li class="hover:text-primary duration-150">
-            <NuxtLink to="/">Home</NuxtLink>
-          </li>
-          <li class="hover:text-primary duration-150">
-            <NuxtLink to="#about-section">About</NuxtLink>
-          </li>
-          <li class="hover:text-primary duration-150">
-            <NuxtLink to="#projects-section">Projects</NuxtLink>
-          </li>
-          <li class="hover:text-primary duration-150">
-            <NuxtLink to="#contact-section">Contact</NuxtLink>
+        <ul class="hidden lg:flex gap-6 uppercase">
+          <li
+            v-for="(item, index) in menuItems"
+            :key="index"
+            class="hover:text-primary duration-150">
+            <NuxtLink :to="item.routeStr">{{ item.title }}</NuxtLink>
           </li>
         </ul>
         <button
@@ -48,7 +44,7 @@
           <svg
             v-if="themeMode === 'dark'"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-50"
+            class="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
@@ -68,17 +64,25 @@
       </div>
     </nav>
   </header>
-  <!-- class="fixed top-0 bg-secondary h-full w-72 overflow-auto duration-200 z-20 pt-20 px-8" -->
+  <!-- // Drawer -->
   <aside
-    class="fixed top-0 bg-secondary h-full w-72 overflow-auto duration-200 z-20 pt-20 px-8 transform ease-in-out transition-all"
+    class="fixed top-0 bg-footer text-themeText h-full w-72 overflow-auto duration-200 z-20 pt-20 px-6 transform ease-in-out transition-all"
     :class="{ '-left-0': showDrawer, '-left-72': !showDrawer }">
-    <p class="mb-4 mt-4">Menu</p>
+    <p class="mb-4 mt-4 uppercase text-secondary">Menu</p>
     <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
+      <li
+        v-for="(item, index) in menuItems"
+        :key="index"
+        class="flex items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2 hover:bg-primary"
+        @click="goTo(item.routeStr)">
+        <span class="material-icons block float-left">
+          {{ item.icon }}
+        </span>
+        <span>{{ item.title }}</span>
+      </li>
     </ul>
   </aside>
+  <!-- // Overlay -->
   <div
     v-if="showDrawer"
     class="fixed top-0 w-screen h-screen z-10 bg-black bg-blend-multiply duration-200"
@@ -96,6 +100,12 @@
 
   // state
   const showDrawer = ref(false);
+  const menuItems = [
+    { title: 'Home', routeStr: '/', icon: 'home' },
+    { title: 'About', routeStr: '#about-section', icon: 'face' },
+    { title: 'Projects', routeStr: '#projects-section', icon: 'dashboard' },
+    { title: 'Contact', routeStr: '#contact-section', icon: 'mail' }
+  ];
 
   // Computed
   const themeMode = computed(() => {
@@ -109,6 +119,7 @@
 
   function goTo(routeStr) {
     router.push(routeStr);
+    showDrawer.value = false;
   }
 </script>
 

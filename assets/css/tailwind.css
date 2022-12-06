@@ -18,9 +18,10 @@ body {
   --accent: #e2e8f0;
   --surface: white;
   --text: #2d333b;
-  --anchor: #568aff;
+  --anchor: #768390;
   --background: #f8fafc;
   --footer: #e5e7eb;
+  --error: #b91c1c;
 }
 
 .theme-dark {
@@ -30,9 +31,10 @@ body {
   --accent: #cbd5e1;
   --surface: #2d333b;
   --text: #adbac7;
-  --anchor: hsl(222, 100%, 67%);
+  --anchor: #768390;
   --background: #22272e;
   --footer: #1c2128;
+  --error: #f87171;
 }
 
 @layer components {
@@ -41,9 +43,18 @@ body {
     @apply bg-primary text-white px-6 py-3 rounded-md text-sm uppercase font-semibold;
   }
   .card {
-    @apply p-3 rounded-md bg-white shadow-md h-full;
+    @apply p-6 rounded-md bg-surface text-themeText shadow-md h-full;
   }
   .chip {
     @apply px-6 pb-2 pt-1 bg-accent text-lg rounded-md mr-3 mb-3 font-semibold;
+  }
+  .pill {
+    @apply bg-accent px-2 rounded-xl text-zinc-600 opacity-60 font-normal;
+  }
+  .dark-pill {
+    @apply bg-accent px-2 rounded-xl text-zinc-600 opacity-40 font-semibold;
+  }
+  .flip-x {
+    @apply scale-x-[-1];
   }
 }

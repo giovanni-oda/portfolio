@@ -5,11 +5,8 @@
     <div class="container mx-auto p-4">
       <slot />
     </div>
-    <div class="footer bg-footer">
-      <div class="container mx-auto p-4">
-        © Copyright {{ new Date().getFullYear() }}. Made by Giovanni Oda <span>Ver. 1.0.0</span>
-      </div>
-    </div>
+
+    <DefaultFooter></DefaultFooter>
   </div>
 </template>
 
@@ -19,8 +16,6 @@
 
   // consts
   const mainStore = useMainStore();
-
-  // data
 
   // Computed
   const themeMode = computed(() => {
@@ -52,9 +47,3 @@
     }
   });
 </script>
-
-<style scoped>
-  .footer {
-    min-height: 400px;
-  }
-</style>

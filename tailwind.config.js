@@ -19,7 +19,8 @@ module.exports = {
         themeText: 'var(--text)',
         anchor: 'var(--anchor)',
         background: 'var(--background)',
-        footer: 'var(--footer)'
+        footer: 'var(--footer)',
+        error: 'var(--error)'
       },
       fontFamily: {
         Barlow: ['Barlow', 'sans-serif']
