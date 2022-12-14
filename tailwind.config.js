@@ -12,11 +12,18 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--primary)',
+        primaryRGB: ({ opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--primary-rgb), ${opacityValue})`;
+          }
+          return `rgb(var(--primary-rgb))`;
+        },
         secondary: 'var(--secondary)',
         tertiary: 'var(--tertiary)',
         accent: 'var(--accent)',
         surface: 'var(--surface)',
         themeText: 'var(--text)',
+        textRGB: 'rgb(--text-rgb)',
         anchor: 'var(--anchor)',
         background: 'var(--background)',
         footer: 'var(--footer)',

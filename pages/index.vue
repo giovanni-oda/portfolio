@@ -1,13 +1,20 @@
 <template>
-  <div class="home-page">
+  <div
+    class="home-page duration-300 ease-in-out"
+    :class="{ 'blur-sm': showModal }">
     <div
       id="hero-section"
-      class="hero h-screen relative">
-      <div class="content flex justify-center flex-col items-center h-[80%]">
-        <h1 class="uppercase text-4xl mb-6 font-semibold text-center">Hey, I'm Giovanni Oda</h1>
-        <p class="text-center text-xl">
-          A full stack engineer focused web developer building web applications <br />
-          that leads to the success of the overall product.
+      class="flex-1 h-screen relative duration-500 ease-in-out"
+      :class="{ 'light-hero': themeMode === 'light', 'dark-hero': themeMode === 'dark' }">
+      <div class="content flex justify-center flex-col items-center h-[80%] px-4">
+        <h1
+          class="uppercase text-5xl mb-6 font-semibold text-center text-primary"
+          :class="{ 'mix-blend-screen': darkMode }">
+          Hey, I'm Giovanni Oda
+        </h1>
+        <p class="text-center text-xl max-w-[650px]">
+          A full stack software engineer focused on web application development that leads to the
+          success of the overall product.
         </p>
         <div class="self-center mt-10">
           <a
@@ -22,7 +29,9 @@
       </div>
       <div id="about-section"></div>
     </div>
-    <section ref="about">
+    <section
+      ref="about"
+      class="container mx-auto p-4 pt-10 mb-10">
       <div
         class="text-center duration-[2000ms] ease-in-out"
         :class="{
@@ -40,22 +49,21 @@
             <div class="max-w-[600px] text-center mx-auto lg:text-left">
               <h2 class="text-2xl font-bold opacity-60 mb-8">Get to know me!</h2>
               <p class="mb-4">
-                I'm a full stack web engineer with
-                <span class="font-semibold">4 years of experience</span> building websites and web
-                applications that leads to the success of the overall product. Check out some of my
-                work in the Projects section.
+                I'm a full stack software engineer with
+                <span class="font-semibold">5 years of experience</span> building websites and
+                primarily web applications that leads to the success of the overall product. Check
+                out some of my latest work in the Projects section.
               </p>
               <p class="mb-4">
                 I also like sharing content related to the stuff that I have learned over the years
                 in web development so it can help other people of the Dev community. Feel free to
                 connect or follow me on my
                 <a
-                  class="text-primary hover:underline"
+                  class="text-primary font-sem duration-300 ease-in-out hover:underline"
                   href="https://www.linkedin.com/in/giovanni-oda/"
                   target="_blank">
-                  Linkedin
-                </a>
-                where I post useful content related to web development and programming.
+                  Linkedin</a
+                >.
               </p>
               <p class="mb-10">
                 I'm open to job opportunities where I can contribute, learn and grow. If you have a
@@ -80,16 +88,11 @@
               </div>
               <h2 class="text-2xl font-bold opacity-60 mt-10 mb-8">Resume</h2>
               <div class="flex gap-4 justify-center lg:justify-start">
-                <a
-                  href="#contact-section"
-                  class="btn">
-                  View
-                </a>
-                <a
-                  href="#contact-section"
-                  class="btn">
-                  Download
-                </a>
+                <button
+                  class="btn"
+                  @click="toggleModal()">
+                  View / Download
+                </button>
               </div>
             </div>
           </div>
@@ -99,9 +102,10 @@
     <section
       ref="projects"
       id="projects-section"
-      class="pt-20">
+      class="pt-10 pb-20"
+      :class="{ 'bg-[rgba(0,0,0,0.025)]': !darkMode, 'bg-[rgba(0,0,0,0.075)]': darkMode }">
       <div
-        class="text-center mt-10 duration-[2000ms] ease-in-out"
+        class="container mx-auto p-4 text-center mt-10 duration-[2000ms] ease-in-out"
         :class="{
           'opacity-0': !projectsIsVisible,
           'opacity-100': projectsIsVisible
@@ -116,72 +120,67 @@
           </p>
           <div class="grid lg:grid-cols-3 gap-8 mt-20">
             <div class="card lg:col-span-2">
-              <div class="grid lg:grid-cols-[42.5%_57.5%] gap-6">
+              <div class="grid lg:grid-cols-[42%_58%] gap-6">
                 <div>
                   <img
-                    src="/imgs/Teste.png"
-                    alt="Teste"
+                    src="/imgs/Cel_MockUp_Cimtia.png"
+                    alt="Giovanni Oda's Portfolio Project Image - Cimtia Ads"
                     class="max-h-[500px] rounded" />
                 </div>
                 <div class="flex flex-col justify-between lg:pr-6">
                   <div class="text-left">
-                    <h2 class="text-xl text-left mb-4 font-semibold">Project Title 1</h2>
+                    <h2 class="text-xl text-left mb-4 font-semibold">Cimtia Ads</h2>
                     <p class="mb-4 text-base leading-snug">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa amet
-                      nobis excepturi, cupiditate commodi tempora pariatur dolores fugiat dolor
-                      similique eveniet sapiente mollitia laudantium.
+                      Is a Brazilian platform that offers small and medium-sized businesses the
+                      possibility of advertising on TV, in an uncomplicated and autonomous way. The
+                      entire process of buying TV media and ordering creative material is done
+                      online by the user on the platform.
                     </p>
                     <span class="text-base font-semibold">Stack</span>
                     <div class="flex gap-2 flex-wrap text-sm">
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        React
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Tailwind
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firebase
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firestore
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firebase Auth
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firebase Storage
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
-                      </span>
-                      <span
-                        class="pill"
-                        :class="{ 'dark-pill': darkMode }">
-                        Vue 3
-                      </span>
-                      <span
-                        class="pill"
-                        :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Cloud Functions
                       </span>
                     </div>
                   </div>
                   <div class="text-left mt-4">
-                    <button class="btn py-1 px-8">Case Study</button>
+                    <button
+                      class="btn py-1 px-8"
+                      @click="$router.push('/projects/cimtia-ads')">
+                      Case Study
+                    </button>
                   </div>
                 </div>
               </div>
@@ -226,7 +225,11 @@
                     </div>
                   </div>
                   <div class="text-left mt-4">
-                    <button class="btn py-1 px-8">Case Study</button>
+                    <button
+                      class="btn py-1 px-8"
+                      @click="$router.push('/projects/project-2')">
+                      Case Study
+                    </button>
                   </div>
                 </div>
               </div>
@@ -356,7 +359,7 @@
     <section
       ref="contact"
       id="contact-section"
-      class="pt-20">
+      class="container mx-auto p-4 pt-12 mb-6">
       <div
         class="text-center mt-10 duration-[2000ms] ease-in-out"
         :class="{
@@ -384,7 +387,7 @@
                     type="text"
                     placeholder="Enter your name"
                     class="bg-transparent w-full text-themeText focus:outline-none"
-                    @keypress="clearError('name')" />
+                    @keyup="clearError('name')" />
                 </div>
                 <Transition mode="out-in">
                   <span
@@ -404,7 +407,7 @@
                     type="email"
                     placeholder="Enter your email"
                     class="bg-transparent w-full text-themeText focus:outline-none"
-                    @keypress="clearError('email')" />
+                    @keyup="clearError('email')" />
                 </div>
                 <Transition mode="out-in">
                   <span
@@ -424,7 +427,7 @@
                     placeholder="Enter Your message"
                     rows="4"
                     class="bg-transparent w-full text-themeText focus:outline-none"
-                    @keypress="clearError('msg')" />
+                    @keyup="clearError('msg')" />
                 </div>
                 <Transition mode="out-in">
                   <span
@@ -437,7 +440,7 @@
               <div class="flex justify-between mb-2">
                 <div>Contact</div>
                 <button
-                  class="btn"
+                  class="btn duration-300 ease-in-out"
                   :class="{ 'bg-footer': !formIsValid, 'text-surface': !formIsValid }"
                   type="submit"
                   :disabled="!formIsValid"
@@ -450,7 +453,19 @@
         </div>
       </div>
     </section>
-    <!-- <h1>Loading: {{ mainStore.loading }}</h1> -->
+    <BaseModal
+      :show-modal="showModal"
+      title="Updated Resume (from home)"
+      max-size="lg"
+      :hide-footer="true"
+      @close-modal="toggleModal()">
+      <ResumeContent></ResumeContent>
+      <template v-slot:tools>
+        <button class="text-primary">
+          <span class="material-icons"> picture_as_pdf </span>
+        </button>
+      </template>
+    </BaseModal>
   </div>
 </template>
 
@@ -461,6 +476,7 @@
 
   // consts
   const mainStore = useMainStore();
+  const showModal = ref(false);
 
   // refs
   const about = ref(null);
@@ -482,19 +498,27 @@
     'Vue Js',
     'Vuex',
     'Pinia',
-    'Nuxt',
+    'Nuxt Js',
     'Node Js',
     'Firebase',
-    'AWS',
+    'Tailwind',
+    'Vuetify',
     'PHP',
     'Laravel',
     'SQL',
-    'Git',
-    'Art Direction'
+    'No-SQL',
+    'GIT',
+    'Ui/Ux Design',
+    'Figma',
+    'Photoshop',
+    'InDesign',
+    'Illustrator',
+    'SCRUM'
   ];
 
   // Computed
   const darkMode = computed(() => mainStore.getTheme === 'dark');
+  const themeMode = computed(() => mainStore.getTheme);
   const nameError = computed(() => validationErrors.value.find((obj) => obj.field === 'name'));
   const emailError = computed(() => validationErrors.value.find((obj) => obj.field === 'email'));
   const msgError = computed(() => validationErrors.value.find((obj) => obj.field === 'msg'));
@@ -503,7 +527,8 @@
   // Methods
   function sendMsg() {
     if (validateForm()) {
-      console.log('formData.value', formData.value);
+      const newMsgData = { ...formData.value };
+      console.log('newMsgData', newMsgData);
       resetForm();
     }
   }
@@ -550,6 +575,11 @@
     validationErrors.value = [];
   }
 
+  function toggleModal() {
+    showModal.value = !showModal.value;
+    mainStore.pageBlur = !mainStore.pageBlur;
+  }
+
   // Client Side
   onMounted(async () => {
     const { firestore } = useFirebase();
@@ -563,6 +593,16 @@
 </script>
 
 <style scoped>
+  .light-hero {
+    background-image: url('/imgs/Bg_hero_light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .dark-hero {
+    background-image: url('/imgs/Bg_hero_dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .mousey {
     width: 2px;
     padding: 4px 10px;

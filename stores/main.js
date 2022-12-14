@@ -3,7 +3,8 @@ import { defineStore } from 'pinia';
 export const useMainStore = defineStore('mainStore', {
   state: () => ({
     loading: false,
-    theme: ''
+    theme: '',
+    pageBlur: false
   }),
 
   getters: {
@@ -12,6 +13,9 @@ export const useMainStore = defineStore('mainStore', {
     },
     getTheme() {
       return this.theme;
+    },
+    getPageBlur() {
+      return this.pageBlur;
     }
   },
 

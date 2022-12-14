@@ -2,45 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  @apply theme-dark bg-background text-themeText;
-  font-family: 'Barlow', sans-serif;
-}
+  body {
+    @apply theme-dark bg-background text-themeText;
+    font-family: 'Barlow', sans-serif;
+  }
 
-.theme-light {
-  --primary: #539bf5;
-  --secondary: #e43f5a;
-  --tertiary: #273549;
-  --accent: #e2e8f0;
-  --surface: white;
-  --text: #2d333b;
-  --anchor: #768390;
-  --background: #f8fafc;
-  --footer: #e5e7eb;
-  --error: #b91c1c;
-}
+  .theme-light {
+    --primary: #539bf5;
+    --primary-rgb: 83, 155, 245;
+    --secondary: #e43f5a;
+    --tertiary: #273549;
+    --accent: #e2e8f0;
+    --surface: white;
+    --text: #2d333b;
+    --text-rgb: 45, 51, 59;
+    --anchor: #768390;
+    --background: #f8fafc;
+    --footer: #e5e7eb;
+    --error: #b91c1c;
+  }
 
-.theme-dark {
-  --primary: #539bf5;
-  --secondary: #e43f5a;
-  --tertiary: #273549;
-  --accent: #cbd5e1;
-  --surface: #2d333b;
-  --text: #adbac7;
-  --anchor: #768390;
-  --background: #22272e;
-  --footer: #1c2128;
-  --error: #f87171;
+  .theme-dark {
+    --primary: #539bf5;
+    --primary-rgb: 83, 155, 245;
+    --secondary: #e43f5a;
+    --tertiary: #273549;
+    --accent: #cbd5e1;
+    --surface: #2d333b;
+    --text: #adbac7;
+    --text-rgb: 173, 186, 199;
+    --anchor: #768390;
+    --background: #22272e;
+    --footer: #1c2128;
+    --error: #f87171;
+  }
 }
 
 @layer components {
   .btn {
     /* @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white uppercase; */
-    @apply bg-primary text-white px-6 py-3 rounded-md text-sm uppercase font-semibold;
+    @apply bg-primaryRGB text-white px-6 py-3 rounded-md text-sm uppercase font-semibold duration-300 ease-in-out hover:bg-opacity-60;
   }
   .card {
     @apply p-6 rounded-md bg-surface text-themeText shadow-md h-full;

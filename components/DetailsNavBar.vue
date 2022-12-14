@@ -27,6 +27,12 @@
         </NuxtLink>
       </div>
       <div class="flex items-center">
+        <ul class="flex gap-6 uppercase lg:hidden">
+          <li class="hover:text-primary duration-150">
+            <NuxtLink to="/">Go Back</NuxtLink>
+          </li>
+        </ul>
+
         <ul class="hidden lg:flex gap-6 uppercase">
           <li
             v-for="(item, index) in menuItems"
@@ -35,6 +41,7 @@
             <NuxtLink :to="item.routeStr">{{ item.title }}</NuxtLink>
           </li>
         </ul>
+
         <button
           v-if="themeMode"
           class="ml-5"
@@ -99,10 +106,8 @@
   // state
   const showDrawer = ref(false);
   const menuItems = [
-    { title: 'Home', routeStr: '/', icon: 'home' },
-    { title: 'About', routeStr: '/#about-section', icon: 'face' },
-    { title: 'Projects', routeStr: '/#projects-section', icon: 'work' },
-    { title: 'Contact', routeStr: '/#contact-section', icon: 'mail' }
+    { title: 'Project Home', routeStr: '/projects/cimtia-ads', icon: 'home' },
+    { title: 'Go Back', routeStr: '/', icon: 'arrow_back' }
   ];
 
   // Computed
@@ -122,7 +127,7 @@
 </script>
 
 <style scoped>
-  /* .router-link-exact-active {
-    color: var(--primary) !important;
-  } */
+  .router-link-exact-active {
+    color: var(--primary);
+  }
 </style>

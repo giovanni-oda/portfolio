@@ -5,13 +5,14 @@
         <div class="mt-12 mb-6 lg:my-12">
           <h3 class="text-2xl font-bold uppercase">Giovanni Oda</h3>
           <p class="mt-4 max-w-[500px]">
-            A full stack web engineer with 4 years of experience building websites and web
-            applications that leads to the success of the overall product.
+            A full stack software engineer with
+            <span class="font-semibold">5 years of experience</span> building websites and primarily
+            web applications that leads to the success of the overall product.
           </p>
           <ul class="mt-8">
-            <a href="mailto:contato@giovannioda.dev">
+            <a href="mailto:contact@giovannioda.dev">
               <li class="flex items-center my-3">
-                <span class="material-icons mr-3"> mail </span> contato@giovannioda.dev
+                <span class="material-icons mr-3"> mail </span> contact@giovannioda.dev
               </li>
             </a>
             <a
@@ -67,13 +68,13 @@
               </a>
             </li>
             <li class="my-3">
-              <a
-                href="#"
-                class="flex items-center">
+              <button
+                class="flex items-center"
+                @click="toggleModal()">
                 <span class="material-icons mr-3"> contacts </span>
                 Updated
                 <span class="font-semibold ml-1"> Resume </span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -84,7 +85,30 @@
         <span class="text-sm opacity-60">Ver. 1.0.0</span>
       </div>
     </div>
+    <BaseModal
+      :show-modal="showModal"
+      title="Updated Resume (from footer)"
+      max-size="md"
+      @close-modal="toggleModal()">
+      <ResumeContent></ResumeContent>
+      <template #actions>
+        <button class="btn">PDF Download</button>
+      </template>
+    </BaseModal>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { ref } from 'vue';
+  import { useMainStore } from '~/stores/main';
+
+  // consts
+  const mainStore = useMainStore();
+  const showModal = ref(null);
+
+  // methods
+  function toggleModal() {
+    showModal.value = !showModal.value;
+    mainStore.pageBlur = !mainStore.pageBlur;
+  }
+</script>

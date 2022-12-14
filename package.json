@@ -3,7 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "deploy-fb": "npm run build && cd .output/server && rd /s /q node_modules && npm i && cd .. && firebase deploy",
+    "deploy-fb": "npm run build && cd .output/server && rd /s /q node_modules && npm i && cd .. && cd .. && firebase deploy",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -19,6 +19,7 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "firebase": "^9.14.0",
     "pinia": "^2.0.27"
   }

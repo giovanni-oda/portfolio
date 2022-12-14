@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@vueuse/nuxt'],
   app: {
     head: {
-      title: "Giovanni Oda's Portifolio",
+      title: "Giovanni Oda's Portfolio",
       meta: [
         {
           name: 'description',
           content:
-            "Giovanni Oda's Portifolio - I'm a full stack engineer focused web developer building web applications that leads to the success of the overall product."
+            "Giovanni Oda's Portfolio - I'm a full stack engineer focused web developer building web applications that leads to the success of the overall product."
         }
       ],
       link: [
