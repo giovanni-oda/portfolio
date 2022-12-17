@@ -455,8 +455,8 @@
     </section>
     <BaseModal
       :show-modal="showModal"
-      title="Updated Resume (from home)"
-      max-size="lg"
+      title="Resume - Updated Dec/22"
+      max-size="xl"
       :hide-footer="true"
       @close-modal="toggleModal()">
       <ResumeContent></ResumeContent>
@@ -508,6 +508,7 @@
     'SQL',
     'No-SQL',
     'GIT',
+    'PWA',
     'Ui/Ux Design',
     'Figma',
     'Photoshop',

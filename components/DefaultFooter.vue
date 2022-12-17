@@ -87,8 +87,8 @@
     </div>
     <BaseModal
       :show-modal="showModal"
-      title="Updated Resume (from footer)"
-      max-size="md"
+      title="Resume - Updated Dec/22"
+      max-size="lg"
       @close-modal="toggleModal()">
       <ResumeContent></ResumeContent>
       <template #actions>
