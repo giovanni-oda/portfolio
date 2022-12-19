@@ -473,10 +473,12 @@
   // Server Side
   import { ref } from 'vue';
   import { useMainStore } from '~/stores/main';
+  import { collection, getDocs } from 'firebase/firestore';
 
   // consts
   const mainStore = useMainStore();
   const showModal = ref(false);
+  const { db } = await useFirebase();
 
   // refs
   const about = ref(null);
@@ -583,13 +585,16 @@
 
   // Client Side
   onMounted(async () => {
-    const { firestore } = useFirebase();
-
-    console.log('firestore', firestore);
     // const docRef = doc(firestore, `animals`, 'dog');
     // onSnapshot(docRef, (snap) => {
     //   data.value = snap.data();
     // });
+
+    const querySnapshot = await getDocs(collection(db, 'projects'));
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, ' => ', doc.data());
+    });
   });
 </script>
 

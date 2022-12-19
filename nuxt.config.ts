@@ -33,16 +33,18 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    // firebase
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId: process.env.APP_ID,
-    measurementId: process.env.MEASUREMENT_ID,
-    // currencyApi
-    currencyKey: process.env.CURRENCY_API_KEY
+    // private env keys
+    currencyKey: process.env.CURRENCY_API_KEY,
+    public: {
+      // firebase public keys
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      projectId: process.env.PROJECT_ID,
+      storageBucket: process.env.STORAGE_BUCKET,
+      messagingSenderId: process.env.MESSAGING_SENDER_ID,
+      appId: process.env.APP_ID,
+      measurementId: process.env.MEASUREMENT_ID
+    }
   },
   nitro: {
     preset: 'firebase'

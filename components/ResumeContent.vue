@@ -279,7 +279,7 @@
       company: 'Art Lab Development - Startup',
       roles: ['CTO', 'Back-end Developer', 'Product Owner'],
       title: 'Founder',
-      period: 'March/20 - Dezember/22',
+      period: 'March/20 - December/22',
       description:
         '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
       bullets: [
