@@ -2,6 +2,7 @@
   <div
     class="home-page duration-300 ease-in-out"
     :class="{ 'blur-sm': showModal }">
+    data: {{ serverData }}
     <div
       id="hero-section"
       class="flex-1 h-screen relative duration-500 ease-in-out"
@@ -473,12 +474,14 @@
   // Server Side
   import { ref } from 'vue';
   import { useMainStore } from '~/stores/main';
-  import { collection, getDocs } from 'firebase/firestore';
+  //import { collection, getDocs } from 'firebase/firestore';
+
+  // const { data: serverData } = useFetch('/api/projects');
+  // const { db } = await useFirebase();
 
   // consts
   const mainStore = useMainStore();
   const showModal = ref(false);
-  const { db } = await useFirebase();
 
   // refs
   const about = ref(null);
@@ -589,12 +592,11 @@
     // onSnapshot(docRef, (snap) => {
     //   data.value = snap.data();
     // });
-
-    const querySnapshot = await getDocs(collection(db, 'projects'));
-    querySnapshot.forEach((doc) => {
-      // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, ' => ', doc.data());
-    });
+    // const querySnapshot = await getDocs(collection(db, 'projects'));
+    // querySnapshot.forEach((doc) => {
+    //   // doc.data() is never undefined for query doc snapshots
+    //   console.log(doc.id, ' => ', doc.data());
+    // });
   });
 </script>
 
