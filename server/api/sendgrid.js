@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
     sgMail.setApiKey(sendGridKey);
     await sgMail.send(sendGridMsg);
 
-    console.log('Email Sent');
+    // console.log('Email Sent');
     return {
       status: 200,
       msg: `Email Sent!`

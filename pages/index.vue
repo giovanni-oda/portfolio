@@ -1,7 +1,7 @@
 <template>
   <div
     class="home-page duration-300 ease-in-out"
-    :class="{ 'blur-sm': showModal }">
+    :class="{ 'blur-sm': showCvModal || showMsgModal }">
     <div
       id="hero-section"
       class="flex-1 h-screen relative duration-500 ease-in-out"
@@ -454,7 +454,7 @@
       </div>
     </section>
     <BaseModal
-      :show-modal="showModal"
+      :show-modal="showCvModal"
       title="Resume - Updated Dec/22"
       max-size="xl"
       :hide-footer="true"
@@ -465,6 +465,17 @@
           <span class="material-icons"> picture_as_pdf </span>
         </button>
       </template>
+    </BaseModal>
+    <BaseModal
+      :show-modal="showMsgModal"
+      :title="msgFeedBack.title"
+      max-size="md"
+      :hide-footer="false"
+      @close-modal="showMsgModal = false">
+      <div class="text-center">
+        <h2 class="text-2xl mb-4">{{ msgFeedBack.h2 }}</h2>
+        <p>{{ msgFeedBack.p }}</p>
+      </div>
     </BaseModal>
   </div>
 </template>
@@ -481,7 +492,6 @@
 
   // consts
   const mainStore = useMainStore();
-  const showModal = ref(false);
 
   // refs
   const about = ref(null);
@@ -489,6 +499,8 @@
   const contact = ref(null);
 
   // state
+  const showCvModal = ref(false);
+  const showMsgModal = ref(false);
   const aboutIsVisible = useElementVisibility(about);
   const projectsIsVisible = useElementVisibility(projects);
   const contactIsVisible = useElementVisibility(contact);
@@ -496,6 +508,7 @@
   const validationErrors = ref([
     // { field: 'name', type: 'required', errorMsg: 'Name is invalid!' }
   ]);
+  const msgFeedBack = ref({ title: '', h2: '', p: '' });
   const skills = [
     'HTML',
     'CSS',
@@ -539,7 +552,19 @@
         method: 'post',
         body: newMsgData
       });
-      console.log(data.value);
+      if (data.value.status === 200) {
+        // console.log('Email Sent feedback');
+        msgFeedBack.value.title = 'Email successfully sent!';
+        msgFeedBack.value.h2 = 'Thank you for contacting me.';
+        msgFeedBack.value.p = 'If necessary, I will respond as soon as possible.';
+      } else {
+        console.error('Error sending Email');
+        msgFeedBack.value.title = 'Error sending email!';
+        msgFeedBack.value.h2 = 'Sorry, an unexpected error occurred.';
+        msgFeedBack.value.p =
+          'Please try again later. Or contact me directly at contact@giovannioda.dev';
+      }
+      showMsgModal.value = true;
       resetForm();
     }
   }
@@ -587,7 +612,7 @@
   }
 
   function toggleModal() {
-    showModal.value = !showModal.value;
+    showCvModal.value = !showCvModal.value;
     mainStore.pageBlur = !mainStore.pageBlur;
   }
 
