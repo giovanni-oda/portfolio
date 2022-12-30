@@ -34,9 +34,10 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     // private env keys
-    currencyKey: process.env.CURRENCY_API_KEY,
+    sendGridKey: process.env.SENDGRID_API_KEY,
     public: {
-      // firebase public keys
+      // public keys
+      // firebase
       apiKey: process.env.API_KEY,
       authDomain: process.env.AUTH_DOMAIN,
       projectId: process.env.PROJECT_ID,

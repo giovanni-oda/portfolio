@@ -2,7 +2,6 @@
   <div
     class="home-page duration-300 ease-in-out"
     :class="{ 'blur-sm': showModal }">
-    data: {{ serverData }}
     <div
       id="hero-section"
       class="flex-1 h-screen relative duration-500 ease-in-out"
@@ -439,7 +438,7 @@
                 </Transition>
               </div>
               <div class="flex justify-between mb-2">
-                <div>Contact</div>
+                <div></div>
                 <button
                   class="btn duration-300 ease-in-out"
                   :class="{ 'bg-footer': !formIsValid, 'text-surface': !formIsValid }"
@@ -472,6 +471,7 @@
 
 <script setup>
   // Server Side
+  import { connectStorageEmulator } from '@firebase/storage';
   import { ref } from 'vue';
   import { useMainStore } from '~/stores/main';
   //import { collection, getDocs } from 'firebase/firestore';
@@ -531,10 +531,15 @@
   const formIsValid = computed(() => validationErrors.value.length <= 0);
 
   // Methods
-  function sendMsg() {
+  async function sendMsg() {
     if (validateForm()) {
       const newMsgData = { ...formData.value };
       console.log('newMsgData', newMsgData);
+      const { data } = await useFetch('/api/sendgrid', {
+        method: 'post',
+        body: newMsgData
+      });
+      console.log(data.value);
       resetForm();
     }
   }

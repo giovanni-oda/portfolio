@@ -118,26 +118,31 @@
           <h2 class="uppercase text-2xl font-semibold">Project Overview</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ut sint labore nesciunt
-            aspernatur soluta quod dolore possimus repellat aut totam nisi a quos corporis quisquam
-            ducimus et amet vitae aperiam, nostrum modi, consequuntur fugit maiores! Perferendis
-            consequatur quae eveniet voluptatibus necessitatibus delectus nemo molestias ut
-            similique architecto! Officia, obcaecati rem in, suscipit itaque, enim qui ad rerum
-            error iste non accusantium adipisci? Repellat dicta est aperiam quasi id velit cum
-            assumenda, amet delectus suscipit! Nesciunt, sunt ratione quae repellat fugiat deleniti
-            consectetur asperiores iure odit reiciendis adipisci esse, nemo delectus obcaecati
-            quibusdam? Incidunt veritatis corporis rem? Id, ut aliquam?
+            Cimtia Ads is a Marketplace or online platform for buying offline media (traditional
+            advertising spaces – such as radio and TV). Allowing small and medium-sized companies to
+            have access to advertising on channels with a large audience on Radio and Open TV
+            stations, either through its easy and intuitive interface or through the negotiated and
+            reduced values practiced exclusively within the App.
           </p>
           <p class="mt-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ut sint labore nesciunt
-            aspernatur soluta quod dolore possimus repellat aut totam nisi a quos corporis quisquam
-            ducimus et amet vitae aperiam, nostrum modi, consequuntur fugit maiores! Perferendis
-            consequatur quae eveniet voluptatibus necessitatibus delectus nemo molestias ut
-            similique architecto! Officia, obcaecati rem in, suscipit itaque, enim qui ad rerum
-            error iste non accusantium adipisci? Repellat dicta est aperiam quasi id velit cum
-            assumenda, amet delectus suscipit! Nesciunt, sunt ratione quae repellat fugiat deleniti
-            consectetur asperiores iure odit reiciendis adipisci esse, nemo delectus obcaecati
-            quibusdam? Incidunt veritatis corporis rem? Id, ut aliquam?
+            This combination of practicality and affordable prices was the pillar that enabled the
+            connection of thousands of small businessmen with large radio and TV stations. According
+            to data collected from the platform's customers, around 90% of the companies that
+            advertised through the app had never advertised on TV before. This demonstrates an
+            extreme assertiveness with the target audience and confirms an increase in billing by
+            the broadcasters, despite the lower profit margin practiced on the channel.
+          </p>
+          <p class="mt-8">
+            In the application, the user can manually choose the communication vehicles he wants to
+            advertise and the preferred channels to broadcast the commercial, or even make use of
+            the ease of using the artificial intelligence of Cimtia Ads, which is capable of
+            creating a selection or mapping of the best channels and programs that "match" with the
+            buying public of the advertising client.
+          </p>
+          <p class="mt-8">
+            <span class="font-semibold">Technical Data:</span> Web application, SPA, with PWA
+            capability (synchronization with the database when offline, push notifications,
+            installation of home icon etc.)
           </p>
         </div>
         <div class="my-16">
