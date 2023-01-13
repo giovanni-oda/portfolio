@@ -556,7 +556,7 @@
         // console.log('Email Sent feedback');
         msgFeedBack.value.title = 'Email successfully sent!';
         msgFeedBack.value.h2 = 'Thank you for contacting me.';
-        msgFeedBack.value.p = 'If necessary, I will respond as soon as possible.';
+        msgFeedBack.value.p = 'I will respond as soon as possible.';
       } else {
         console.error('Error sending Email');
         msgFeedBack.value.title = 'Error sending email!';

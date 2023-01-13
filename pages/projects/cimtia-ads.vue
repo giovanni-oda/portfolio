@@ -109,9 +109,30 @@
           <h2 class="uppercase text-2xl font-semibold">Role</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat minima eveniet
-            maxime vitae labore mollitia, perspiciatis explicabo ratione neque numquam ipsum
-            reprehenderit, nesciunt ex consequatur corporis, culpa fuga tempora!
+            Like every startup founder, I had to get multiple roles on the project, including CTO,
+            where I was responsible for the company's technology strategy, leading the development
+            team and ensuring that the company adopted the most appropriate technologies for the
+            project.
+          </p>
+          <p class="mt-8">
+            As CTO, I was also responsible for assessing the company's technology needs and
+            determining how they could be met more efficiently. This includes researching and
+            evaluating new technologies and deciding which ones should be adopted by the company. I
+            was also responsible for budgeting and managing the company's technology budget.
+          </p>
+          <p class="mt-8">
+            As a back-end developer I was responsible for creating and implementing server-side
+            logic and managing the communication between the front-end and the database (no-sql).
+            Duties also included creating and managing APIs, implementing security features, and
+            optimizing application performance.
+          </p>
+          <p class="mt-8">
+            In the back-end, languages and technologies such as Firebase, Firestore, Cloud Functions
+            and Node.js were used. Regarding the application's integrations with third-party APIs, I
+            worked with payment services (Pagar.me - similar to Stripe), zip code verification (IBGE
+            - Official Demographic Source of the Government of Brazil) and checking the validity of
+            personal registration documents ( RG and CPF – something similar to the Social Security
+            Number).
           </p>
         </div>
         <div class="my-16">

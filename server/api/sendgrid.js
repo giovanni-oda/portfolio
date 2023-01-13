@@ -9,8 +9,8 @@ export default defineEventHandler(async (event) => {
       to: 'oda.giovanni@gmail.com',
       from: 'contact@giovannioda.dev',
       subject: `${name} sent you an email from your portfolio page.`,
-      text: `Reply email: ${email}`,
-      html: `<strong>Message:</strong> ${msg}`
+      text: `Reply to: ${email}`,
+      html: `<strong>Reply to:</strong> ${email}<br><strong>Message:</strong> ${msg}`
     };
     const { sendGridKey } = useRuntimeConfig();
 
