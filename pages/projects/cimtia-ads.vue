@@ -109,10 +109,26 @@
           <h2 class="uppercase text-2xl font-semibold">Role</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            Like every startup founder, I had to get multiple roles on the project, including CTO,
-            where I was responsible for the company's technology strategy, leading the development
-            team and ensuring that the company adopted the most appropriate technologies for the
-            project.
+            I am an entrepreneur who started my own business. As founder of the startup I acted as
+            CTO and back-end developer, responsible for the technology strategy, leading the
+            development team, researching and evaluating new technologies, budgeting and managing
+            the technology budget.
+          </p>
+          <p class="mt-6">
+            As a backend developer, I created and implemented server-side logic, managed
+            communication between the frontend and the database, created and managed APIs,
+            implemented security features, and optimized application performance.
+          </p>
+          <p class="mt-6">
+            In this project i worked with several languages and technologies like Firebase,
+            Firestore, Cloud Functions, Node.js and integrated third-party APIs for payment methods,
+            zip code verification and checking the validity of personal registration documents.
+          </p>
+          <!-- <p class="mt-8">
+            Like every entrepreneur who starts his own business or startup, I had to play multiple
+            roles in this project, including CTO and back-end developer, where I was responsible for
+            the company's technology strategy, leading the development team and ensuring that the
+            company adopt the most appropriate technologies for the project.
           </p>
           <p class="mt-8">
             As CTO, I was also responsible for assessing the company's technology needs and
@@ -127,13 +143,13 @@
             optimizing application performance.
           </p>
           <p class="mt-8">
-            In the back-end, languages and technologies such as Firebase, Firestore, Cloud Functions
-            and Node.js were used. Regarding the application's integrations with third-party APIs, I
-            worked with payment services (Pagar.me - similar to Stripe), zip code verification (IBGE
-            - Official Demographic Source of the Government of Brazil) and checking the validity of
-            personal registration documents ( RG and CPF – something similar to the Social Security
-            Number).
-          </p>
+            For the back-end of this project I used several languages and technologies, such as
+            Firebase, Firestore, Cloud Functions, Node.js, among others. In the application's
+            integrations with third-party APIs, I worked with payment methods services (Pagar.me -
+            similar to Stripe), zip code verification (IBGE - Official demographic source of the
+            government of Brazil) and checking the validity of personal registration documents ( RG
+            and CPF – something similar to the Social Security Number).
+          </p> -->
         </div>
         <div class="my-16">
           <h2 class="uppercase text-2xl font-semibold">Project Overview</h2>
@@ -145,7 +161,7 @@
             stations, either through its easy and intuitive interface or through the negotiated and
             reduced values practiced exclusively within the App.
           </p>
-          <p class="mt-8">
+          <p class="mt-6">
             This combination of practicality and affordable prices was the pillar that enabled the
             connection of thousands of small businessmen with large radio and TV stations. According
             to data collected from the platform's customers, around 90% of the companies that
@@ -153,7 +169,7 @@
             extreme assertiveness with the target audience and confirms an increase in billing by
             the broadcasters, despite the lower profit margin practiced on the channel.
           </p>
-          <p class="mt-8">
+          <p class="mt-6">
             In the application, the user can manually choose the communication vehicles he wants to
             advertise and the preferred channels to broadcast the commercial, or even make use of
             the ease of using the artificial intelligence of Cimtia Ads, which is capable of
@@ -161,8 +177,8 @@
             buying public of the advertising client.
           </p>
           <p class="mt-8">
-            <span class="font-semibold">Technical Data:</span> Web application, SPA, with PWA
-            capability (synchronization with the database when offline, push notifications,
+            <span class="font-semibold">Technical specifications:</span> Web application, SPA, with
+            PWA capability (synchronization with the database when offline, push notifications,
             installation of home icon etc.)
           </p>
         </div>
