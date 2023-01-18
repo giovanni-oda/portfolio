@@ -92,7 +92,11 @@
       @close-modal="toggleModal()">
       <ResumeContent></ResumeContent>
       <template #actions>
-        <button class="btn">PDF Download</button>
+        <a
+          href="/pdf/GiovanniOda_Resume.pdf"
+          target="_blank">
+          <button class="btn">Download</button>
+        </a>
       </template>
     </BaseModal>
   </div>

@@ -110,9 +110,7 @@
             </div>
           </div>
           <div class="mt-2">
-            <p>
-              {{ exp.description }}
-            </p>
+            <p v-html="exp.description"></p>
             <ul class="mt-1 text-base pl-2 md:pl-4">
               <li
                 v-for="(bullet, index) in exp.bullets"
@@ -141,7 +139,7 @@
                   <a
                     v-if="!link.disable"
                     :href="link.url"
-                    target="_blank"
+                    :target="link.external ? '_blank' : '_self'"
                     class="text-primary">
                     {{ link.text }}
                   </a>
@@ -171,8 +169,8 @@
               <li
                 v-for="(bullet, index) in project.bullets"
                 :key="index">
-                <span class="text-primary font-bold">•</span>
-                {{ bullet }}
+                <span class="text-primary font-bold mr-1">•</span>
+                <span v-html="bullet"></span>
               </li>
             </ul>
           </div>
@@ -186,9 +184,10 @@
         <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-2 mb-2"></div>
         <div class="pt-3">
           <p>
-            A full stack software engineer with
+            Full stack software engineer with
             <span class="font-semibold">5 years of experience</span> building websites and primarily
-            web applications that leads to the success of the overall product.
+            web applications developed for clients and also applications that led to the creation of
+            my own businesses.
           </p>
         </div>
       </section>
@@ -279,39 +278,39 @@
       company: 'Art Lab Development - Startup',
       roles: ['CTO', 'Back-end Developer', 'Product Owner'],
       title: 'Founder',
-      period: 'March/20 - December/22',
+      period: 'March/20 - November/22',
       description:
-        '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
+        'Company founded by me along with two business partners in March 2020, to develop and launch the <a href="/projects/cimtia-ads" class="opacity-70 underline">Cimtia Ads</a> app. In total, over 2 years, the company received more than 1.5 million reais (approximately 300 thousand dollars) in investments from the <a href="https://ndmais.com.br/ndtv/" target="_blank" class="opacity-70 underline">ND TV group</a> from Santa Catarina/Brazil.',
       bullets: [
-        'Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.'
+        'Responsible for the technology strategy, lead the development team, research and evaluate new technologies and manage the technology budget;',
+        'Create server-side logic, manage front-end and database communication, integrate and interact with APIs, and implement security features;',
+        'Communicate goals and requirements to the development team and ensure they are clearly understood, identify and prioritize user requirements, and approve user stories for the project backlog.'
       ]
     },
     {
-      company: 'Art Lab Development - Startup',
-      roles: ['CTO', 'Back-end Developer', 'Product Owner'],
-      title: 'Founder',
-      period: 'March/20 - November/22',
+      company: 'NetDev System - Own business',
+      roles: ['Front-end Developer', 'Back-end Developer', 'Database Architect'],
+      title: 'Full-stack Engineer',
+      period: 'March/17 - February/20',
       description:
-        '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
+        "As a solo entrepreneur or freelancer, I made apps for several clients totaling dozens of projects. Among them: Websites, Web applications in general (SPA's, PWA's), Wordpress sites (e-commerce, blogs, news portals), Laravel applications (PHP and SQL) and native mobile applications in Flutter, that is, the job and the customer's need determined the technology for each case. In March 2020, one of the clients invited me to invest in the Cimtia Ads project and start the company Art Lab.",
       bullets: [
-        'Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.'
+        "Responsible for defining the technologies used (tech stack) and the architecture of the project's database.",
+        'Develop the entire project (Full-stack) to deliver the application, ordered by the client, tested and 100% working.',
+        'Define and implement the necessary infrastructure (Serverless, Cloud, Docker, VM etc) to deploy applications.'
       ]
     },
     {
-      company: 'Art Lab Development - Startup',
-      roles: ['CTO', 'Back-end Developer', 'Product Owner'],
-      title: 'Founder',
-      period: 'March/20 - November/22',
+      company: 'GTW Digital Marketing Agency',
+      roles: ['Web Designer', 'Ux/Ui Designer', 'Web Developer'],
+      title: 'Web developer',
+      period: 'October/15 - February/17',
       description:
-        '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
+        'Digital marketing agency specializing in the car dealership sector offering services such as SEO, pay-per-click advertising, social media marketing, email marketing and mostly websites and web apps. Main client: Grupo Primavia (Group of Dealerships that has been operating for 27 years representing automakers: FIAT, RENAULT, NISSAN, JEEP, RAM, CHRYSLER, DODGE, PEUGEOT, CITROEN, CHERY, YAMAHA AND VENTURA MARINE.)',
       bullets: [
-        'Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.'
+        'Responsible for leading the website development department.',
+        "Create layouts and prototypes (Ui/Ux) for the agency's clients' projects.",
+        'Develop, test, implement and deploy websites and applications.'
       ]
     }
   ];
@@ -319,52 +318,71 @@
     {
       name: 'Cimtia Ads',
       links: [
-        { text: 'Live Link', url: '#', disable: false },
-        { text: 'Figma Prototype', url: '#', disable: false },
-        { text: 'GitHub (Private)', url: '#', disable: true }
+        { text: 'Case Study', url: '/projects/cimtia-ads', disable: false, external: false },
+        { text: 'Live Link', url: 'https://cimtiaads.com.br/', disable: false, external: true },
+        {
+          text: 'Figma Prototype',
+          url: 'https://www.figma.com/proto/A2lYY95xY7u5hGZcgVLHxX/Redesign-Cimtia---Anunciante-DESKTOP?node-id=76%3A2246&starting-point-node-id=76%3A2246&scaling=scale-down',
+          disable: false,
+          external: true
+        },
+        { text: 'GitHub (Private)', url: '#', disable: true, external: true }
       ],
       role: 'Back-end Developer',
-      period: 'March/20 - November/22',
       description:
-        '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
+        'Online platform for the sale of advertising space in traditional media vehicles that offers small and medium-sized companies the possibility of advertising on TV and Radio, in an easy and accessible way. The entire process of buying media and ordering creative material is done online by the user on the platform.',
       bullets: [
-        'Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.'
+        '<span class="font-semibold">Front-end</span>: Application developed in the SPA pattern using the React JS framework. Contains some PWA functionality.',
+        '<span class="font-semibold">Back-end</span>: Uses auth, databases, storage and messaging services in serverless architecture (GCP as a cloud provider).',
+        '<span class="font-semibold">Stack</span>: HTML, CSS, Javascript, React JS, Tailwind, Firebase (Firestore, Auth, Storage, Functions, Hosting, Messaging).'
       ]
     },
     {
-      name: 'Cimtia Ads',
+      name: 'Carro Certo App',
       links: [
-        { text: 'Live Link', url: '#', disable: false },
-        { text: 'Figma Prototype', url: '#', disable: false },
-        { text: 'GitHub', url: '#', disable: false }
+        { text: 'Case Study', url: '/projects/carro-certo', disable: false, external: false },
+        { text: 'Live Link', url: 'https://app.carrocertobr.com', disable: false, external: true },
+        { text: 'GitHub (Private)', url: '#', disable: true, external: true }
       ],
-      role: 'Back-end Developer',
-      period: 'March/20 - November/22',
+      role: 'Full-stack Engineer',
       description:
-        '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
+        "Application that connects dealers of used cars to a base of more than 1000 vehicles. That way, when a customer is looking for a car that the seller doesn't have in his physical store, he uses the app to find and negotiate the exact car he wants, making the sale, retaining customers and even making a profit depending on the value negotiated.",
       bullets: [
-        'Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.'
+        '<span class="font-semibold">Front-end</span>: Web application (SPA), built on top of the Vue JS ecosystem.',
+        '<span class="font-semibold">Back-end</span>: Uses Google Firebase services as a backend on a serverless architecture.',
+        '<span class="font-semibold">Stack</span>: HTML, CSS, Javascript, Vue JS, Vuex, Vuetify, Firebase (Firestore, Auth, Storage, Functions, Messaging).'
       ]
     },
     {
-      name: 'Cimtia Ads',
+      name: 'Aventar – Rádio Testemunhal',
       links: [
-        { text: 'Live Link', url: '#', disable: false },
-        { text: 'Figma Prototype', url: '#', disable: false },
-        { text: 'GitHub', url: '#', disable: false }
+        {
+          text: 'Case Study',
+          url: '/projects/testemunhal-aventar',
+          disable: false,
+          external: false
+        },
+        {
+          text: 'Live Link (LP)',
+          url: 'https://testemunhal.aventar.com.br/campaign/programa-de-testagem-covid-19',
+          disable: false,
+          external: true
+        },
+        {
+          text: 'Live Link (Back-office)',
+          url: 'https://testemunhal.aventar.com.br',
+          disable: false,
+          external: true
+        },
+        { text: 'GitHub (Private)', url: '#', disable: true, external: true }
       ],
-      role: 'Back-end Developer',
-      period: 'March/20 - November/22',
+      role: 'Full-stack Engineer',
       description:
-        '2 lines description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam vitae, nisi fugiat nobis voluptatum minus neque itaque at modi repudiandae consequatur ducimus.',
+        'Radio insertion verification platform. Allows advertising agencies to account, check-in and verify the advertising spaces purchased on radio stations for a given campaign. It was used, for example, in the campaign of the Ministry of Health of the Government of Brazil to prove the advertisements on the radios of the campaign to encourage the vaccination of COVID-19.',
       bullets: [
-        'Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.',
-        'Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor similique.'
+        '<span class="font-semibold">Front-end</span>: Web application (SPA), built on top of the Vue JS ecosystem.',
+        '<span class="font-semibold">Back-end</span>: Uses Google Firebase services as a backend on a serverless architecture.',
+        '<span class="font-semibold">Stack</span>: HTML, CSS, Javascript, Vue JS, Vuex, Vuetify, Firebase (Firestore, Auth, Storage, Functions, Messaging).'
       ]
     }
   ];
@@ -404,11 +422,12 @@
     ],
     soft: [
       'Effective Communication',
-      'Empathy',
-      'Creative Thinking',
-      'Leadership',
+      'Problem-solving',
+      'Collaboration',
       'Time Management',
-      'Work Ethic'
+      'Continuous Learning',
+      'Strong Work Ethics',
+      'Leadership'
     ]
   };
 

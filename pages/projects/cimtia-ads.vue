@@ -159,22 +159,22 @@
             advertising spaces – such as radio and TV). Allowing small and medium-sized companies to
             have access to advertising on channels with a large audience on Radio and Open TV
             stations, either through its easy and intuitive interface or through the negotiated and
-            reduced values practiced exclusively within the App.
+            reduced prices practiced exclusively within the App.
           </p>
           <p class="mt-6">
             This combination of practicality and affordable prices was the pillar that enabled the
-            connection of thousands of small businessmen with large radio and TV stations. According
-            to data collected from the platform's customers, around 90% of the companies that
+            connection of thousands of small business with large radio and TV stations. According to
+            data collected from the platform's customers, around 90% of the companies that
             advertised through the app had never advertised on TV before. This demonstrates an
             extreme assertiveness with the target audience and confirms an increase in billing by
             the broadcasters, despite the lower profit margin practiced on the channel.
           </p>
           <p class="mt-6">
             In the application, the user can manually choose the communication vehicles he wants to
-            advertise and the preferred channels to broadcast the commercial, or even make use of
-            the ease of using the artificial intelligence of Cimtia Ads, which is capable of
-            creating a selection or mapping of the best channels and programs that "match" with the
-            buying public of the advertising client.
+            advertise and the preferred channels to air the commercial, or even take advantage of
+            the ease of use of the artificial intelligence of Cimtia Ads, which is capable of
+            creating a selection or mapping of the best channels and programs that match the
+            advertising customer's buying public.
           </p>
           <p class="mt-8">
             <span class="font-semibold">Technical specifications:</span> Web application, SPA, with

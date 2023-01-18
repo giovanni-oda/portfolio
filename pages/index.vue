@@ -462,7 +462,11 @@
       <ResumeContent></ResumeContent>
       <template v-slot:tools>
         <button class="text-primary">
-          <span class="material-icons"> picture_as_pdf </span>
+          <a
+            href="/pdf/GiovanniOda_Resume.pdf"
+            target="_blank">
+            <span class="material-icons"> picture_as_pdf </span>
+          </a>
         </button>
       </template>
     </BaseModal>
