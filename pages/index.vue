@@ -189,45 +189,55 @@
               <div class="grid">
                 <div>
                   <img
-                    src="/imgs/Teste2.png"
+                    src="/imgs/Desk_MockUp_Carro-certo.png"
                     alt="Teste2"
                     class="rounded" />
                 </div>
                 <div>
                   <div class="text-left">
-                    <h2 class="text-xl text-left my-2 font-semibold">Project Title 2</h2>
+                    <h2 class="text-xl text-left my-2 font-semibold">Carro Certo App</h2>
                     <p class="mb-2 text-base leading-snug">
-                      Lorem ipsum dolor sit amet, consect sicing elit. Corrupti culpa amet nobis
-                      excepturi lorem ipsum sit amet.
+                      Application that connects used car dealerships to a database of more than 1000
+                      vehicles.
                     </p>
                     <span class="text-base font-semibold">Stack</span>
                     <div class="flex gap-2 flex-wrap text-sm">
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Vue JS
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Vuex
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Vuetify
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firebase
+                      </span>
+                      <span
+                        class="pill"
+                        :class="{ 'dark-pill': darkMode }">
+                        Firestore
+                      </span>
+                      <span
+                        class="pill"
+                        :class="{ 'dark-pill': darkMode }">
+                        Firebase Functions
                       </span>
                     </div>
                   </div>
                   <div class="text-left mt-4">
                     <button
                       class="btn py-1 px-8"
-                      @click="$router.push('/projects/project-2')">
+                      @click="$router.push('/projects/carro-certo')">
                       Case Study
                     </button>
                   </div>
@@ -680,12 +690,10 @@
   section {
     min-height: 800px;
   }
-
   .v-enter-active,
   .v-leave-active {
     transition: opacity 0.5s ease;
   }
-
   .v-enter-from,
   .v-leave-to {
     opacity: 0;

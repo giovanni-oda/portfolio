@@ -1,26 +1,19 @@
 <template>
   <div class="details-page">
-    <!-- <div
-      class="flex-1 h-screen md:max-h-[600px] relative duration-500 ease-in-out"
-      :class="{ 'light-hero': themeMode === 'light', 'dark-hero': themeMode === 'dark' }"> -->
     <div class="flex-1 h-screen md:max-h-[600px] relative duration-500 ease-in-out">
       <div class="content flex justify-center flex-col items-center h-[80%] px-4">
         <img
           class="max-w-[300px] mb-8"
           :src="
             darkMode
-              ? '/imgs/projects/cimtia/cimtia-ads-logo-neg-hor.svg'
-              : '/imgs/projects/cimtia/cimtia-ads-logo-pos-hor.svg'
+              ? '/imgs/projects/carro-certo/Logo_Carro-Certo_Neg.svg'
+              : '/imgs/projects/carro-certo/Logo_Carro-Certo_Pos.svg'
           "
           alt="Cimtia Ads Project Logo" />
-        <!-- <h1
-          class="uppercase text-5xl mb-6 font-semibold text-center text-primary"
-          :class="{ 'mix-blend-screen': darkMode }">
-          Cimtia Ads
-        </h1> -->
         <p class="text-center text-xl max-w-[650px]">
-          A online marketplace platform for the sale of traditional (offline) Tv and Radio media
-          ads, which connects small advertisers to large channels and communication vehicles.
+          The Carro Certo app connects the stock of several used car stores to each other, allowing
+          the entrepreneur to serve his customers even if he does not have the vehicle he is looking
+          for in his yard.
         </p>
         <div class="self-center mt-10 mb-20">
           <a
@@ -72,32 +65,29 @@
             class="glide__track"
             data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="flex justify-center min-h-[600px] w-full">
-                  <iframe
-                    width="100%"
-                    src="https://www.youtube.com/embed/43RDhRCYa_I"
-                    title="Cimtia Ads project review video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-              </li>
               <li class="glide__slide my-auto">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot1_mobile.jpg')] md:bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot1.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen0.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen0.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot2_mobile.jpg')] md:bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot2.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen1.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen1.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot3_mobile.jpg')] md:bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot3.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen2.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen2.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot4_mobile.jpg')] md:bg-[url('/imgs/projects/cimtia/Cimtia_Screenshot4.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen3.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen3.jpg')]"></div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen4.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen4.jpg')]"></div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen5.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen5.jpg')]"></div>
               </li>
             </ul>
           </div>
@@ -133,6 +123,9 @@
             <button
               class="glide__bullet"
               data-glide-dir="=4"></button>
+            <button
+              class="glide__bullet"
+              data-glide-dir="=5"></button>
           </div>
         </div>
       </section>
@@ -145,47 +138,26 @@
           <h2 class="uppercase text-2xl font-semibold">Role</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            I am an entrepreneur who started my own business. As founder of the startup I acted as
-            CTO and back-end developer, responsible for the technology strategy, leading the
-            development team, researching and evaluating new technologies, budgeting and managing
-            the technology budget.
+            In this project, I was recruited to lead the development of the application from the
+            start. My team consisted of only two full-stack developers, and it took us approximately
+            six months to complete the full development of the app.
           </p>
           <p class="mt-6">
-            As a backend developer, I created and implemented server-side logic, managed
-            communication between the frontend and the database, created and managed APIs,
-            implemented security features, and optimized application performance.
+            As a member of the team, I alternated between front-end and back-end tasks. I was also
+            responsible for designing the database architecture and selecting the technologies and
+            stack used in the project.
           </p>
-          <p class="mt-6">
-            In this project i worked with several languages and technologies like Firebase,
-            Firestore, Cloud Functions, Node.js and integrated third-party APIs for payment methods,
-            zip code verification and checking the validity of personal registration documents.
-          </p>
-          <!-- <p class="mt-8">
-            Like every entrepreneur who starts his own business or startup, I had to play multiple
-            roles in this project, including CTO and back-end developer, where I was responsible for
-            the company's technology strategy, leading the development team and ensuring that the
-            company adopt the most appropriate technologies for the project.
-          </p>
-          <p class="mt-8">
-            As CTO, I was also responsible for assessing the company's technology needs and
-            determining how they could be met more efficiently. This includes researching and
-            evaluating new technologies and deciding which ones should be adopted by the company. I
-            was also responsible for budgeting and managing the company's technology budget.
-          </p>
-          <p class="mt-8">
-            As a back-end developer I was responsible for creating and implementing server-side
-            logic and managing the communication between the front-end and the database (no-sql).
-            Duties also included creating and managing APIs, implementing security features, and
-            optimizing application performance.
-          </p>
-          <p class="mt-8">
-            For the back-end of this project I used several languages and technologies, such as
-            Firebase, Firestore, Cloud Functions, Node.js, among others. In the application's
-            integrations with third-party APIs, I worked with payment methods services (Pagar.me -
-            similar to Stripe), zip code verification (IBGE - Official demographic source of the
-            government of Brazil) and checking the validity of personal registration documents ( RG
-            and CPF – something similar to the Social Security Number).
+          <!-- <p class="mt-6">
+            In addition to my work on the development side, I was also responsible for setting up
+            and maintaining the continuous integration and continuous deployment (CI/CD) pipeline.
+            This included configuring a webhook in the GitHub repository that triggered the build
+            and deployment process whenever code was pushed to the repository.
           </p> -->
+          <p class="mt-6">
+            Lastly, I was also responsible for managing the DevOps system, which included building,
+            maintaining and improving the development infrastructure, deployment through pipeline
+            build automation (Ci/Cd), testing and application deployment.
+          </p>
           <div id="section-text-overview"></div>
         </div>
 
@@ -193,31 +165,36 @@
           <h2 class="uppercase text-2xl font-semibold">Project Overview</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            Cimtia Ads is a Marketplace or online platform for buying offline media (traditional
-            advertising spaces – such as radio and TV). Allowing small and medium-sized companies to
-            have access to advertising on channels with a large audience on Radio and Open TV
-            stations, either through its easy and intuitive interface or through the negotiated and
-            reduced prices practiced exclusively within the App.
+            The CarroCerto.com app offers a wide range of features that are designed to make it easy
+            for car dealers to expand their inventory and improve their sales. The app offers a vast
+            selection of cars, with over 1,000 vehicles available for purchase at any given time.
+            This means that dealers can find the vehicles they need to fill their inventory without
+            having to worry about storage space or the cost of maintaining a large physical
+            inventory.
           </p>
           <p class="mt-6">
-            This combination of practicality and affordable prices was the pillar that enabled the
-            connection of thousands of small business with large radio and TV stations. According to
-            data collected from the platform's customers, around 90% of the companies that
-            advertised through the app had never advertised on TV before. This demonstrates an
-            extreme assertiveness with the target audience and confirms an increase in billing by
-            the broadcasters, despite the lower profit margin practiced on the channel.
+            One of the key features of the app is the real-time negotiation feature. This allows
+            dealers to negotiate prices and finalize deals quickly and easily. The app is also
+            optimized for mobile use, so dealers can manage and negotiate their inventory from
+            anywhere at any time. This feature also allows them to keep track of their inventory and
+            monitor sales in real-time, giving them the flexibility to adapt to market changes and
+            customer demand.
           </p>
           <p class="mt-6">
-            In the application, the user can manually choose the communication vehicles he wants to
-            advertise and the preferred channels to air the commercial, or even take advantage of
-            the ease of use of the artificial intelligence of Cimtia Ads, which is capable of
-            creating a selection or mapping of the best channels and programs that match the
-            advertising customer's buying public.
+            The CarroCerto.com app also offers a variety of other features that are designed to make
+            it easy for dealers to operate their business. For example, the app offers an external
+            evaluation feature that allows dealers to have a third party evaluate their vehicles
+            before they are sold. Additionally, the app has a filtering feature that allows dealers
+            to sort through their inventory and find the specific vehicles they need. The app also
+            provides an unlimited number of ads and only charges users when they make a purchase.
+            All these features are designed to help car dealers to expand their inventory, increase
+            sales, and improve their overall business operations.
           </p>
           <p class="mt-8">
             <span class="font-semibold">Technical specifications:</span> Web application, SPA, with
-            PWA capability (synchronization with the database when offline, push notifications,
-            installation of home icon etc.)
+            PWA capability (offline functionality, push notifications, home icon installation etc.).
+            Integrated with payment system and real-time chat capability for communication between
+            users.
           </p>
           <div id="section-text-more"></div>
         </div>
@@ -228,13 +205,15 @@
             <p class="chip">HTML</p>
             <p class="chip">CSS</p>
             <p class="chip">Javascript</p>
-            <p class="chip">React</p>
-            <p class="chip">Tailwind</p>
+            <p class="chip">Vue JS</p>
+            <p class="chip">Vuex</p>
+            <p class="chip">Vuetify</p>
             <p class="chip">Firebase</p>
             <p class="chip">Firestore</p>
             <p class="chip">Firebase Auth</p>
             <p class="chip">Firebase Storage</p>
             <p class="chip">Cloud Functions</p>
+            <p class="chip">Cloud Messaging</p>
             <div id="see-more"></div>
           </div>
         </div>
@@ -243,13 +222,13 @@
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <div class="mt-8 flex gap-4 flex-wrap">
             <a
-              href="https://cimtiaads.com.br/"
+              href="https://app.carrocertobr.com/"
               class="btn"
               target="_blank">
               Live Link
             </a>
             <a
-              href="https://www.figma.com/proto/A2lYY95xY7u5hGZcgVLHxX/Redesign-Cimtia---Anunciante-DESKTOP?node-id=76%3A2246&starting-point-node-id=76%3A2246&scaling=scale-down"
+              href="https://www.figma.com/file/1L81WDi1JUGt8b3ETwDETy/Carro-Certo?node-id=2405%3A345&t=xkrNK2rAalUcWEKy-0"
               class="btn"
               target="_blank">
               Figma Prototype

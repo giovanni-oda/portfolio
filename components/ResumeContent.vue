@@ -346,7 +346,7 @@
       ],
       role: 'Full-stack Engineer',
       description:
-        "Application that connects dealers of used cars to a base of more than 1000 vehicles. That way, when a customer is looking for a car that the seller doesn't have in his physical store, he uses the app to find and negotiate the exact car he wants, making the sale, retaining customers and even making a profit depending on the value negotiated.",
+        "Application that connects used car dealerships to a database of more than 1000 vehicles. That way, when a customer is looking for a car that the seller doesn't have in his physical store, he uses the app to find and negotiate the exact car he wants, making the sale, retaining customers and even making a profit depending on the value negotiated.",
       bullets: [
         '<span class="font-semibold">Front-end</span>: Web application (SPA), built on top of the Vue JS ecosystem.',
         '<span class="font-semibold">Back-end</span>: Uses Google Firebase services as a backend on a serverless architecture.',

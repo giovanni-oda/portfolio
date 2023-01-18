@@ -31,8 +31,18 @@
           <li
             v-for="(item, index) in menuItems"
             :key="index"
-            class="hover:text-primary duration-150">
-            <NuxtLink :to="item.routeStr">{{ item.title }}</NuxtLink>
+            class="hover:text-primary duration-150"
+            :class="{ 'text-primary': isTop && index === 0 }">
+            <a
+              v-if="index === 0"
+              href="#">
+              Home
+            </a>
+            <NuxtLink
+              v-else
+              :to="item.routeStr">
+              {{ item.title }}
+            </NuxtLink>
           </li>
         </ul>
         <button
@@ -98,12 +108,21 @@
 
   // state
   const showDrawer = ref(false);
+  const isTop = ref(true);
   const menuItems = [
-    { title: 'Home', routeStr: '/', icon: 'home' },
+    {},
     { title: 'About', routeStr: '/#about-section', icon: 'face' },
     { title: 'Projects', routeStr: '/#projects-section', icon: 'work' },
     { title: 'Contact', routeStr: '/#contact-section', icon: 'mail' }
   ];
+
+  // lifecycle hooks (client side)
+  onMounted(() => {
+    // console.log('mounted');
+    window.addEventListener('scroll', (event) => {
+      isTop.value = window.pageYOffset > 0 ? false : true;
+    });
+  });
 
   // Computed
   const themeMode = computed(() => {

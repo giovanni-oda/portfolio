@@ -27,20 +27,25 @@
         </NuxtLink>
       </div>
       <div class="flex items-center">
-        <ul class="flex gap-6 uppercase lg:hidden">
+        <ul class="flex gap-6 uppercase">
+          <li
+            class="hidden lg:flex hover:text-primary duration-150"
+            :class="{ 'text-primary': isTop }">
+            <a href="#">Project Home</a>
+          </li>
           <li class="hover:text-primary duration-150">
-            <NuxtLink to="/">Go Back</NuxtLink>
+            <NuxtLink to="/#projects-section">Go Back</NuxtLink>
           </li>
         </ul>
 
-        <ul class="hidden lg:flex gap-6 uppercase">
+        <!-- <ul class="hidden lg:flex gap-6 uppercase">
           <li
             v-for="(item, index) in menuItems"
             :key="index"
             class="hover:text-primary duration-150">
             <NuxtLink :to="item.routeStr">{{ item.title }}</NuxtLink>
           </li>
-        </ul>
+        </ul> -->
 
         <button
           v-if="themeMode"
@@ -75,7 +80,7 @@
     :class="{ '-left-0': showDrawer, '-left-72': !showDrawer }">
     <p class="mb-4 mt-4 uppercase text-secondary">Menu</p>
     <ul>
-      <li
+      <!-- <li
         v-for="(item, index) in menuItems"
         :key="index"
         class="flex items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2 hover:bg-primary"
@@ -84,6 +89,20 @@
           {{ item.icon }}
         </span>
         <span>{{ item.title }}</span>
+      </li> -->
+      <a href="#">
+        <li
+          class="flex items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2"
+          @click="showDrawer = false">
+          <span class="material-icons block float-left"> home </span>
+          <span>Project Home</span>
+        </li>
+      </a>
+      <li
+        class="flex items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2"
+        @click="goTo('/#projects-section')">
+        <span class="material-icons block float-left"> arrow_back </span>
+        <span>Go Back</span>
       </li>
     </ul>
   </aside>
@@ -102,13 +121,22 @@
   // Consts
   const mainStore = useMainStore();
   const router = useRouter();
+  // const route = useRoute();
+
+  onMounted(() => {
+    // console.log('mounted');
+    window.addEventListener('scroll', (event) => {
+      isTop.value = window.pageYOffset > 0 ? false : true;
+    });
+  });
 
   // state
   const showDrawer = ref(false);
-  const menuItems = [
-    { title: 'Project Home', routeStr: '/projects/cimtia-ads', icon: 'home' },
-    { title: 'Go Back', routeStr: '/', icon: 'arrow_back' }
-  ];
+  const isTop = ref(true);
+  // const menuItems = [
+  //   { title: 'Project Home', routeStr: route.fullPath, icon: 'home' },
+  //   { title: 'Go Back', routeStr: '/#projects-section', icon: 'arrow_back' }
+  // ];
 
   // Computed
   const themeMode = computed(() => {
