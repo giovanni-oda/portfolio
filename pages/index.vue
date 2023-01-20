@@ -190,7 +190,7 @@
                 <div>
                   <img
                     src="/imgs/Desk_MockUp_Carro-certo.png"
-                    alt="Teste2"
+                    alt="Carro Certo App Screenshot"
                     class="rounded" />
                 </div>
                 <div>
@@ -222,7 +222,7 @@
                         :class="{ 'dark-pill': darkMode }">
                         Firebase
                       </span>
-                      <span
+                      <!-- <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
                         Firestore
@@ -231,7 +231,7 @@
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
                         Firebase Functions
-                      </span>
+                      </span> -->
                     </div>
                   </div>
                   <div class="text-left mt-4">
@@ -248,43 +248,49 @@
               <div class="grid">
                 <div>
                   <img
-                    src="/imgs/Teste2.png"
-                    alt="Teste2"
+                    src="/imgs/Desk_MockUp_Aventar-testel.png"
+                    alt="Aventar Radio Testel Screenshot"
                     class="rounded" />
                 </div>
                 <div>
                   <div class="text-left">
-                    <h2 class="text-xl text-left my-2 font-semibold">Project Title 3</h2>
+                    <h2 class="text-xl text-left my-2 font-semibold">
+                      Aventar - Rádio Testemunhal
+                    </h2>
                     <p class="mb-2 text-base leading-snug">
-                      Lorem ipsum dolor sit amet, consect sicing elit. Corrupti culpa amet nobis
-                      excepturi lorem ipsum sit amet.
+                      Application that allows checking the radio advertising insertions ordered by
+                      the advertising agency.
                     </p>
                     <span class="text-base font-semibold">Stack</span>
                     <div class="flex gap-2 flex-wrap text-sm">
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Vue JS
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Vuex
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Vuetify
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firebase
                       </span>
                     </div>
                   </div>
                   <div class="text-left mt-4">
-                    <button class="btn py-1 px-8">Case Study</button>
+                    <button
+                      class="btn py-1 px-8"
+                      @click="$router.push('/projects/aventar-testel')">
+                      Case Study
+                    </button>
                   </div>
                 </div>
               </div>
@@ -293,64 +299,81 @@
               <div class="grid lg:grid-cols-[57.5%_42.5%]">
                 <div>
                   <img
-                    src="/imgs/Teste.png"
-                    alt="Teste"
-                    class="max-h-[500px] flip-x rounded" />
+                    src="/imgs/Cel_MockUp_Agencia-bsb_flip.png"
+                    alt="Agencia Brasília Project Screenshot"
+                    class="hidden lg:block max-h-[500px] rounded" />
+                  <img
+                    src="/imgs/Cel_MockUp_Agencia-bsb.png"
+                    alt="Agencia Brasília Project Screenshot"
+                    class="lg:hidden max-h-[500px] rounded" />
                 </div>
                 <div class="flex flex-col justify-between lg:row-start-1">
                   <div class="text-left">
-                    <h2 class="text-xl text-left mb-4 font-semibold">Project Title 4</h2>
+                    <h2 class="text-xl text-left mb-4 font-semibold">
+                      Agência Brasília – News Portal
+                    </h2>
                     <p class="mb-4 text-base leading-snug">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa amet
-                      nobis excepturi, cupiditate commodi tempora pariatur dolores fugiat dolor
-                      similique eveniet sapiente mollitia laudantium.
+                      Official News Portal of the Government of the Federal District (capital of
+                      Brazil). Through the portal, the government posts news, announcements,
+                      important data, makes the Governor's public agenda available and other
+                      relevant information that the population can access via the website or native
+                      apps for iOS and Android.
                     </p>
                     <span class="text-base font-semibold">Stack</span>
                     <div class="flex gap-2 flex-wrap text-sm">
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Flutter
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Dart
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Firebase
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        Wordpress
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        PHP
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        MySQL
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        HTML
                       </span>
                       <span
                         class="pill"
                         :class="{ 'dark-pill': darkMode }">
-                        Vue 3
+                        CSS
+                      </span>
+                      <span
+                        class="pill"
+                        :class="{ 'dark-pill': darkMode }">
+                        Javascript
                       </span>
                     </div>
                   </div>
                   <div class="text-left mt-4">
-                    <button class="btn py-1 px-8">Case Study</button>
+                    <button
+                      class="btn py-1 px-8"
+                      @click="$router.push('/projects/agencia-bsb')">
+                      Case Study
+                    </button>
                   </div>
                 </div>
               </div>

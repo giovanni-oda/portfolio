@@ -358,7 +358,7 @@
       links: [
         {
           text: 'Case Study',
-          url: '/projects/testemunhal-aventar',
+          url: '/projects/aventar-testel',
           disable: false,
           external: false
         },

@@ -31,7 +31,16 @@
           <li
             class="hidden lg:flex hover:text-primary duration-150"
             :class="{ 'text-primary': isTop }">
-            <a href="#">Project Home</a>
+            <a
+              v-if="routeName === 'projects'"
+              href="#">
+              Home
+            </a>
+            <a
+              v-else
+              href="#">
+              Project Home
+            </a>
           </li>
           <li class="hover:text-primary duration-150">
             <NuxtLink to="/#projects-section">Go Back</NuxtLink>
@@ -95,7 +104,8 @@
           class="flex items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2"
           @click="showDrawer = false">
           <span class="material-icons block float-left"> home </span>
-          <span>Project Home</span>
+          <span v-if="routeName === 'projects'">Home</span>
+          <span v-else>Project Home</span>
         </li>
       </a>
       <li
@@ -121,7 +131,7 @@
   // Consts
   const mainStore = useMainStore();
   const router = useRouter();
-  // const route = useRoute();
+  const route = useRoute();
 
   onMounted(() => {
     // console.log('mounted');
@@ -139,9 +149,8 @@
   // ];
 
   // Computed
-  const themeMode = computed(() => {
-    return mainStore.getTheme;
-  });
+  const themeMode = computed(() => mainStore.getTheme);
+  const routeName = computed(() => route.name);
 
   // Methods
   function toggleTheme() {

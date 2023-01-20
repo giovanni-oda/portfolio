@@ -6,14 +6,14 @@
           class="max-w-[300px] mb-8"
           :src="
             darkMode
-              ? '/imgs/projects/carro-certo/Logo_Carro-Certo_Neg.svg'
-              : '/imgs/projects/carro-certo/Logo_Carro-Certo_Pos.svg'
+              ? '/imgs/projects/aventar-testel/Logo_Aventar_Testel_Neg.svg'
+              : '/imgs/projects/aventar-testel/Logo_Aventar_Testel_Pos.svg'
           "
           alt="Cimtia Ads Project Logo" />
         <p class="text-center text-xl max-w-[650px]">
-          The Carro Certo app connects the stock of several used car stores to each other, allowing
-          the entrepreneur to serve his customers even if he does not have the vehicle he is looking
-          for in his yard.
+          Valuable tool for radio advertisers, as it offers the possibility of checking the
+          insertions of their campaign, gaining access to the list of radios and listening to all
+          the ads captured in audio, in a simple and friendly way.
         </p>
         <div class="self-center mt-10 mb-20">
           <a
@@ -67,27 +67,23 @@
             <ul class="glide__slides">
               <li class="glide__slide my-auto">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen0.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen0.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Mobile_screen0.jpg')] md:bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Desk_screen0.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen1.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen1.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Mobile_screen1.jpg')] md:bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Desk_screen1.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen2.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen2.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Mobile_screen2.jpg')] md:bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Desk_screen2.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen3.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen3.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Mobile_screen3.jpg')] md:bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Desk_screen3.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen4.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen4.jpg')]"></div>
-              </li>
-              <li class="glide__slide">
-                <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen5.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen5.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Mobile_screen4.jpg')] md:bg-[url('/imgs/projects/aventar-testel/Aventar-Testel_Desk_screen4.jpg')]"></div>
               </li>
             </ul>
           </div>
@@ -123,9 +119,6 @@
             <button
               class="glide__bullet"
               data-glide-dir="=4"></button>
-            <button
-              class="glide__bullet"
-              data-glide-dir="=5"></button>
           </div>
         </div>
       </section>
@@ -138,25 +131,18 @@
           <h2 class="uppercase text-2xl font-semibold">Role</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            In this project, I was recruited to lead the development of the application from the
-            start. My team consisted of only two full-stack developers, and it took us approximately
-            six months to complete the full development of the app.
+            Application commissioned and developed in partnership with the company Aventar, which
+            provides services to large Brazilian advertising agencies.
           </p>
           <p class="mt-6">
-            As a member of the team, I alternated between front-end and back-end tasks. I was also
-            responsible for designing the database architecture and selecting the technologies and
-            stack used in the project.
+            Also used in the campaign to encourage vaccination against COVID-19, by the Ministry of
+            Health of the Government of Brazil, the application continues to be constantly
+            developed, receiving new features and expanding its capacity to serve the customer even
+            better.
           </p>
-          <!-- <p class="mt-6">
-            In addition to my work on the development side, I was also responsible for setting up
-            and maintaining the continuous integration and continuous deployment (CI/CD) pipeline.
-            This included configuring a webhook in the GitHub repository that triggered the build
-            and deployment process whenever code was pushed to the repository.
-          </p> -->
           <p class="mt-6">
-            Lastly, I was also responsible for managing the DevOps system, which included building,
-            maintaining and improving the development infrastructure, deployment through pipeline
-            build automation (Ci/Cd), testing and application deployment.
+            In this project, which started only from a need and an idea, I was responsible for the
+            entire development, architecture, testing and implementation of the system.
           </p>
           <div id="section-text-overview"></div>
         </div>
@@ -165,36 +151,25 @@
           <h2 class="uppercase text-2xl font-semibold">Project Overview</h2>
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <p class="mt-8">
-            The CarroCerto.com app offers a wide range of features that are designed to make it easy
-            for car dealers to expand their inventory and improve their sales. The app offers a vast
-            selection of cars, with over 1,000 vehicles available for purchase at any given time.
-            This means that dealers can find the vehicles they need to fill their inventory without
-            having to worry about storage space or the cost of maintaining a large physical
-            inventory.
+            Aventar - Rádio Testemunhal is an application developed to meet the needs of radio
+            advertisers. It allows to check the insertions of advertising campaign, obtaining proof
+            of all the media purchased by the advertising agency.
           </p>
           <p class="mt-6">
-            One of the key features of the app is the real-time negotiation feature. This allows
-            dealers to negotiate prices and finalize deals quickly and easily. The app is also
-            optimized for mobile use, so dealers can manage and negotiate their inventory from
-            anywhere at any time. This feature also allows them to keep track of their inventory and
-            monitor sales in real-time, giving them the flexibility to adapt to market changes and
-            customer demand.
+            Through the app, advertisers have access to a list of all contracted radio stations and
+            can listen to the captured audio insertions, including only the ad excerpt. All this is
+            available in a simple and friendly dashboard, public and accessible via the internet.
           </p>
           <p class="mt-6">
-            The CarroCerto.com app also offers a variety of other features that are designed to make
-            it easy for dealers to operate their business. For example, the app offers an external
-            evaluation feature that allows dealers to have a third party evaluate their vehicles
-            before they are sold. Additionally, the app has a filtering feature that allows dealers
-            to sort through their inventory and find the specific vehicles they need. The app also
-            provides an unlimited number of ads and only charges users when they make a purchase.
-            All these features are designed to help car dealers to expand their inventory, increase
-            sales, and improve their overall business operations.
+            With the application, advertisers can be sure that their campaigns are being displayed
+            correctly and on all the radios in their media plan, in addition to having the
+            possibility of listening to the insertions, which facilitates the verification of
+            possible narration errors, content or audio problems.
           </p>
           <p class="mt-8">
             <span class="font-semibold">Technical specifications:</span> Web application, SPA, with
             PWA capability (offline functionality, push notifications, home icon installation etc.).
-            Integrated with payment system and real-time chat capability for communication between
-            users.
+            Integrated with <span class="font-semibold">FFmpeg</span> audio library.
           </p>
           <div id="section-text-more"></div>
         </div>
@@ -222,16 +197,16 @@
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <div class="mt-8 flex gap-4 flex-wrap">
             <a
-              href="https://app.carrocertobr.com/"
+              href="https://testemunhal.aventar.com.br/campaign/programa-de-testagem-covid-19"
               class="btn"
               target="_blank">
-              Live Link
+              Live Link (cliente LP)
             </a>
             <a
-              href="https://www.figma.com/file/1L81WDi1JUGt8b3ETwDETy/Carro-Certo?node-id=2405%3A345&t=xkrNK2rAalUcWEKy-0"
+              href="https://testemunhal.aventar.com.br/"
               class="btn"
               target="_blank">
-              Figma Prototype
+              Live Link (app back-office)
             </a>
             <button
               class="btn bg-footer text-surface"
@@ -256,11 +231,11 @@
   });
 
   useHead({
-    title: "Giovanni Oda's Portfolio | Project | App Carro Certo",
+    title: "Giovanni Oda's Portfolio | Project | Aventar - Rádio Testemunhal",
     meta: [
       {
         name: 'description',
-        content: "Giovanni Oda's portfolio App Carro Certo project Case Study"
+        content: "Giovanni Oda's portfolio Aventar - Rádio Testemunhal project Case Study"
       }
     ]
   });

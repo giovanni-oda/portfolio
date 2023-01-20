@@ -277,7 +277,7 @@
   });
 
   useHead({
-    title: "Giovanni Oda's Portfolio | Cimtia Ads Project",
+    title: "Giovanni Oda's Portfolio | Project | Cimtia Ads",
     meta: [
       { name: 'description', content: "Giovanni Oda's portfolio Cimtia Ads project Case Study" }
     ]
