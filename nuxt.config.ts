@@ -35,7 +35,7 @@ export default defineNuxtConfig({
           content: 'https://giovannioda.dev/imgs/giovanni-oda-social-card.jpg'
         },
         {
-          hid: 't-desc',
+          hid: 't-description',
           property: 'twitter:description',
           content:
             "I'm a full stack software engineer with 5+ years of experience building websites and web applications."

@@ -86,7 +86,7 @@
           <span class="text-secondary">🧡</span> Nuxt3
         </p>
         <!-- version  -->
-        <span class="text-sm opacity-60">Ver. 1.0.1</span>
+        <span class="text-sm opacity-60">Ver. 1.0.2</span>
       </div>
     </div>
     <BaseModal

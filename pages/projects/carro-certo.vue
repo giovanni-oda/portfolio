@@ -67,27 +67,27 @@
             <ul class="glide__slides">
               <li class="glide__slide my-auto">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen0.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen0.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/carro-certo_mobile_screen0.jpg')] md:bg-[url('/imgs/projects/carro-certo/carro-certo_desk_screen0.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen1.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen1.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/carro-certo_mobile_screen1.jpg')] md:bg-[url('/imgs/projects/carro-certo/carro-certo_desk_screen1.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen2.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen2.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/carro-certo_mobile_screen2.jpg')] md:bg-[url('/imgs/projects/carro-certo/carro-certo_desk_screen2.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen3.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen3.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/carro-certo_mobile_screen3.jpg')] md:bg-[url('/imgs/projects/carro-certo/carro-certo_desk_screen3.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen4.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen4.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/carro-certo_mobile_screen4.jpg')] md:bg-[url('/imgs/projects/carro-certo/carro-certo_desk_screen4.jpg')]"></div>
               </li>
               <li class="glide__slide">
                 <div
-                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/Carro-certo_Mobile_screen5.jpg')] md:bg-[url('/imgs/projects/carro-certo/Carro-certo_Desk_screen5.jpg')]"></div>
+                  class="slider-img min-h-[550px] bg-[url('/imgs/projects/carro-certo/carro-certo_mobile_screen5.jpg')] md:bg-[url('/imgs/projects/carro-certo/carro-certo_desk_screen5.jpg')]"></div>
               </li>
             </ul>
           </div>
@@ -222,7 +222,7 @@
           <div class="max-w-[50px] h-[3px] rounded mr-auto bg-secondary mt-3"></div>
           <div class="mt-8 flex gap-4 flex-wrap">
             <a
-              href="https://app.carrocertobr.com/"
+              href="https://app-carro-certo.web.app/"
               class="btn"
               target="_blank">
               Live Link

@@ -341,7 +341,12 @@
       name: 'Carro Certo App',
       links: [
         { text: 'Case Study', url: '/projects/carro-certo', disable: false, external: false },
-        { text: 'Live Link', url: 'https://app.carrocertobr.com', disable: false, external: true },
+        {
+          text: 'Live Link',
+          url: 'https://app-carro-certo.web.app/',
+          disable: false,
+          external: true
+        },
         { text: 'GitHub (Private)', url: '#', disable: true, external: true }
       ],
       role: 'Full-stack Engineer',
