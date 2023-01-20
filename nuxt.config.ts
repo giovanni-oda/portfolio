@@ -8,7 +8,37 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            "Giovanni Oda's Portfolio - I'm a full stack engineer focused web developer building web applications that leads to the success of the overall product."
+            "Giovanni Oda's Portfolio - I'm a full stack software engineer with 5+ years of experience building websites and primarily web applications that leads to the success of the overall product."
+        },
+        { hid: 'og-type', property: 'og:type', content: 'website' },
+        { hid: 'og-title', property: 'og:title', content: "Giovanni Oda's Portfolio" },
+        { hid: 'og-url', property: 'og:url', content: 'https://giovannioda.dev' },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: 'https://giovannioda.dev/imgs/giovanni-oda-social-card.jpg'
+        },
+        {
+          hid: 'og-desc',
+          property: 'og:description',
+          content:
+            "I'm a full stack software engineer with 5+ years of experience building websites and web applications."
+        },
+
+        { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 't-domain', name: 'twitter:domain', content: 'giovannioda.dev' },
+        { hid: 't-url', name: 'twitter:url', content: 'https://giovannioda.dev' },
+        { hid: 't-title', name: 'twitter:title', content: "Giovanni Oda's Portfolio" },
+        {
+          hid: 't-image',
+          property: 'twitter:image',
+          content: 'https://giovannioda.dev/imgs/giovanni-oda-social-card.jpg'
+        },
+        {
+          hid: 't-desc',
+          property: 'twitter:description',
+          content:
+            "I'm a full stack software engineer with 5+ years of experience building websites and web applications."
         }
       ],
       link: [
