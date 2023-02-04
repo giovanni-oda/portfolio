@@ -110,7 +110,7 @@
   const showDrawer = ref(false);
   const isTop = ref(true);
   const menuItems = [
-    {},
+    { title: 'Home', routeStr: '/', icon: 'home' },
     { title: 'About', routeStr: '/#about-section', icon: 'face' },
     { title: 'Projects', routeStr: '/#projects-section', icon: 'work' },
     { title: 'Contact', routeStr: '/#contact-section', icon: 'mail' }

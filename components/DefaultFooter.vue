@@ -82,8 +82,7 @@
       <div class="text-center px-4 py-8 border-t border-black/20">
         <p>
           © Copyright {{ new Date().getFullYear() }}. Made by
-          <span class="text-primary"> Giovanni Oda </span> with
-          <span class="text-secondary">🧡</span> Nuxt3
+          <span class="text-primary"> Giovanni Oda </span> with Nuxt3 💚
         </p>
         <!-- version  -->
         <span class="text-sm opacity-60">Ver. 1.0.2</span>

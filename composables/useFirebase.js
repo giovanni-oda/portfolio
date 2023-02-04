@@ -1,4 +1,5 @@
 import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getFunctions } from 'firebase/functions';
@@ -22,10 +23,11 @@ export const useFirebase = async () => {
 
   const firebaseApp = initializeApp(firebaseConfig);
 
+  const analytics = getAnalytics(firebaseApp);
   const auth = getAuth(firebaseApp);
   const db = getFirestore(firebaseApp);
   const functions = getFunctions(firebaseApp);
   const storage = getStorage(firebaseApp);
 
-  return { auth, db, functions, storage };
+  return { analytics, auth, db, functions, storage };
 };

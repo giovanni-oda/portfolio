@@ -248,7 +248,7 @@
               <div class="grid">
                 <div>
                   <img
-                    src="/imgs/Desk_MockUp_Aventar-testel.png"
+                    src="/imgs/Desk_MockUp_Aventar-Testel.png"
                     alt="Aventar Radio Testel Screenshot"
                     class="rounded" />
                 </div>
@@ -527,6 +527,21 @@
   // const { data: serverData } = useFetch('/api/projects');
   // const { db } = await useFirebase();
 
+  // Client Side
+  onMounted(async () => {
+    // const docRef = doc(firestore, `animals`, 'dog');
+    // onSnapshot(docRef, (snap) => {
+    //   data.value = snap.data();
+    // });
+    // const querySnapshot = await getDocs(collection(db, 'projects'));
+    // querySnapshot.forEach((doc) => {
+    //   // doc.data() is never undefined for query doc snapshots
+    //   console.log(doc.id, ' => ', doc.data());
+    // });
+
+    const { analytics } = useFirebase();
+  });
+
   // consts
   const mainStore = useMainStore();
 
@@ -652,19 +667,6 @@
     showCvModal.value = !showCvModal.value;
     mainStore.pageBlur = !mainStore.pageBlur;
   }
-
-  // Client Side
-  onMounted(async () => {
-    // const docRef = doc(firestore, `animals`, 'dog');
-    // onSnapshot(docRef, (snap) => {
-    //   data.value = snap.data();
-    // });
-    // const querySnapshot = await getDocs(collection(db, 'projects'));
-    // querySnapshot.forEach((doc) => {
-    //   // doc.data() is never undefined for query doc snapshots
-    //   console.log(doc.id, ' => ', doc.data());
-    // });
-  });
 </script>
 
 <style scoped>
