@@ -270,6 +270,7 @@
   // Server Side
   import { useMainStore } from '~/stores/main';
   import Glide from '@glidejs/glide';
+  import { logEvent } from 'firebase/analytics';
 
   // built in composables functions
   definePageMeta({
@@ -285,13 +286,20 @@
 
   // consts
   const mainStore = useMainStore();
+  const route = useRoute();
 
   // Computed
   const darkMode = computed(() => mainStore.getTheme === 'dark');
   const themeMode = computed(() => mainStore.getTheme);
 
-  // hooks (Client Side)
+  // client side Hook
   onMounted(async () => {
+    const { analytics } = await useFirebase();
+    const url = window.location.origin + route.fullPath;
+    logEvent(analytics, 'page_view', {
+      page_location: url
+    });
+    // console.log('url', url);
     new Glide('.glide', {
       type: 'slider',
       startAt: 0,

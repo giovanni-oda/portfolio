@@ -85,7 +85,7 @@
           <span class="text-primary"> Giovanni Oda </span> with Nuxt3 💚
         </p>
         <!-- version  -->
-        <span class="text-sm opacity-60">Ver. 1.0.2</span>
+        <span class="text-sm opacity-60">Ver. 1.0.3</span>
       </div>
     </div>
     <BaseModal
